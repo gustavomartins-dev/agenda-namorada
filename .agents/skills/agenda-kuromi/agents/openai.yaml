@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agenda Kuromi"
+  short_description: "Cria e mantém uma agenda pessoal com tema Kuromi."
+  default_prompt: "Use $agenda-kuromi para criar ou aprimorar a agenda pessoal com tema Kuromi."
