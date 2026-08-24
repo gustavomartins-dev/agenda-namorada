@@ -1,6 +1,7 @@
 {
   "name": "agenda-da-nicolly",
   "version": "1.0.0",
+  "license": "MIT",
   "main": "expo-router/entry",
   "dependencies": {
     "@expo-google-fonts/fredoka": "^0.4.1",

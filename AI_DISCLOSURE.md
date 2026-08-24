@@ -18,8 +18,9 @@ O uso de IA não elimina a necessidade de revisão humana. Resultados gerados po
 IA podem conter erros, e os testes automatizados não substituem a validação final
 em um aparelho Xiaomi real.
 
-Este é um projeto privado, pessoal e não comercial. A inspiração visual em Kuromi
-não representa afiliação, licença, patrocínio ou aprovação da Sanrio. Kuromi e
-Sanrio pertencem aos seus respectivos titulares. Esta declaração de transparência
-não concede direitos sobre marcas, personagens, imagens ou dependências de
-terceiros.
+Este é um projeto pessoal, com código original publicado como open source sob a
+licença MIT e finalidade não comercial. A licença do código não se estende a
+marcas, personagens ou artes de terceiros. A inspiração visual em Kuromi não
+representa afiliação, licença, patrocínio ou aprovação da Sanrio. Kuromi e Sanrio
+pertencem aos seus respectivos titulares. Esta declaração de transparência não
+concede direitos sobre marcas, personagens, imagens ou dependências de terceiros.

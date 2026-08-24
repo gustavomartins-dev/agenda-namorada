@@ -1,56 +1,144 @@
-# Agenda da Nicolly 💜
+<div align="center">
+  <img src="./assets/images/kuromi-planner.png" width="280" alt="Ilustração temática da Kuromi abraçando uma agenda roxa" />
 
-Agenda pessoal e privada criada com carinho para a Nicolly. O aplicativo usa uma
-identidade visual punk-kawaii inspirada na Kuromi e foi pensado primeiro para
-Android/Xiaomi. A agenda continua offline; o assistente inteligente é opcional e
-usa um pequeno servidor local no computador.
+  <h1>🖤 Agenda da Nicolly 💜</h1>
+
+  <p><strong>Uma agenda punk-kawaii, carinhosa e totalmente personalizada.</strong></p>
+  <p>Feita para organizar os dias da Nicolly com corações roxos, atitude e um pouquinho de magia. ✨</p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Expo-57.0-0E0914?style=for-the-badge&logo=expo&logoColor=white" alt="Expo 57" />
+    <img src="https://img.shields.io/badge/React_Native-0.86-B778FF?style=for-the-badge&logo=react&logoColor=white" alt="React Native 0.86" />
+    <img src="https://img.shields.io/badge/TypeScript-6.0-6E3AA8?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript 6" />
+    <img src="https://img.shields.io/badge/Android-Xiaomi-FF4FA3?style=for-the-badge&logo=android&logoColor=white" alt="Android e Xiaomi" />
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/IA-OpenAI_Codex-23152F?style=flat-square&logo=openai&logoColor=white" alt="Desenvolvido com assistência do OpenAI Codex" />
+    <img src="https://img.shields.io/badge/licença-MIT-C77DFF?style=flat-square" alt="Licença MIT" />
+    <img src="https://img.shields.io/badge/status-v1_preview-FF8BCB?style=flat-square" alt="Status v1 preview" />
+  </p>
+
+  <p>⋆｡‧˚ʚ 🖤 ɞ˚‧｡⋆</p>
+</div>
 
 > [!IMPORTANT]
-> **Projeto desenvolvido com IA:** a ideia, a finalidade e as decisões de produto
-> são de Gustavo Martins. A implementação, a interface, os testes, a documentação
-> e a preparação Android contaram com assistência substancial do
-> **OpenAI Codex**. Consulte [Transparência sobre IA](./AI_DISCLOSURE.md).
+> **Este projeto foi desenvolvido com assistência substancial de IA.** A ideia,
+> a dedicação e as decisões de produto são de Gustavo Martins; implementação,
+> interface, testes, documentação e preparação Android contaram principalmente
+> com o **OpenAI Codex**. Leia a [declaração completa de transparência](./AI_DISCLOSURE.md).
 
-## O que já funciona
+## 💜 Sobre este cantinho
 
-- tela Hoje com faixa semanal e próximo compromisso;
-- calendário mensal, semanal e diário;
-- criação, edição, conclusão e exclusão de compromissos;
-- categorias, horário, duração e notas;
-- persistência local no aparelho com AsyncStorage;
-- recadinho personalizável do Gustavo;
-- preferência de redução dos efeitos visuais;
-- layout responsivo, áreas seguras e rótulos de acessibilidade;
-- chat por texto com histórico local e estado offline;
-- propostas de criação, alteração e exclusão que sempre exigem confirmação;
-- lembretes locais persistentes, com reagendamento e cancelamento;
-- gravação de áudio com duração, prévia, cancelamento e envio;
-- backend privado separado, sessão Hermes persistente e validação de ações.
+A Agenda da Nicolly nasceu como um presente: um aplicativo pessoal para cuidar
+de compromissos, lembretes e pequenos recados em uma experiência inspirada na
+estética punk-kawaii da Kuromi. Os dados da agenda ficam no próprio aparelho, e
+o assistente inteligente local é opcional.
 
-## Arquitetura
+Ela foi desenhada primeiro para Android/Xiaomi, mas a interface também funciona
+na web para desenvolvimento e demonstração.
 
-```text
-App Expo ── texto/transcrição ──> server:8787 ── texto ──> Hermes:8642
-    │                                │
-    ├─ AsyncStorage                  ├─ chave privada
-    ├─ confirmação humana            ├─ sessão persistente
-    └─ notificações locais           └─ validação Zod + sem ferramentas
+## ✨ O que já brilha
+
+| 💜 Hoje | 🗓️ Calendário | 🧠 Assistente | 🖤 Cantinho |
+| --- | --- | --- | --- |
+| faixa semanal e próximo compromisso | visões mensal, semanal e diária | conversa por texto com histórico local | recadinho afetivo personalizável |
+| eventos do dia com estados claros | criação e edição de compromissos | propostas de criar, editar e excluir | redução opcional de efeitos visuais |
+| conclusão e exclusão com feedback | horários, duração, categorias e notas | confirmação humana obrigatória | identidade roxa punk-kawaii |
+| lembretes locais persistentes | navegação por datas e detalhes | estado offline e erros honestos | layout responsivo e acessível |
+
+### Pequenos detalhes que fazem diferença
+
+- 💟 persistência local com AsyncStorage;
+- 🔔 notificações locais com reagendamento e cancelamento;
+- 🎙️ gravação de até 90 segundos, duração, descarte e envio preparados;
+- 🛡️ o APK nunca recebe a chave privada do Hermes;
+- ✅ nenhuma ação sugerida pelo assistente altera a agenda sem confirmação;
+- ♿ áreas seguras, contraste, alvos de toque e rótulos de acessibilidade.
+
+<div align="center">
+  <img src="./assets/app-icon-kuromi.png" width="150" alt="Ícone roxo e preto da Agenda da Nicolly" />
+  <p><em>fofa, organizada e com atitude 🖤</em></p>
+</div>
+
+## 📱 Onde funciona hoje
+
+| Plataforma | Agenda | Assistente | Lembretes |
+| --- | --- | --- | --- |
+| **Android/Xiaomi** | experiência principal e offline | via backend local e `adb reverse` | implementados; validação física final pendente |
+| **Web** | desenvolvimento e demonstração | funciona com backend no mesmo computador | notificações web não equivalem às nativas |
+| **iPhone físico** | agenda offline | indisponível com o transporte local atual | ainda não validados neste projeto |
+
+## 🪄 Como tudo conversa
+
+```mermaid
+flowchart LR
+    APP["📱 App Expo<br/>Agenda da Nicolly"]
+    DATA["💜 AsyncStorage<br/>fonte de verdade"]
+    ALERT["🔔 Notificações<br/>lembretes locais"]
+    API["🛡️ Servidor local<br/>127.0.0.1:8787"]
+    AI["🧠 Hermes local<br/>127.0.0.1:8642"]
+
+    APP --- DATA
+    APP --- ALERT
+    APP -->|texto ou áudio| API
+    API -->|contexto mínimo| AI
+    AI -->|proposta validada| API
+    API -->|confirmar primeiro| APP
+
+    classDef app fill:#2B1238,color:#FFFFFF,stroke:#C77DFF,stroke-width:2px;
+    classDef local fill:#4A225F,color:#FFFFFF,stroke:#FF8BCB,stroke-width:2px;
+    classDef safe fill:#17111F,color:#FFFFFF,stroke:#B778FF,stroke-width:2px;
+    class APP app;
+    class DATA,ALERT local;
+    class API,AI safe;
 ```
 
-O Hermes nunca é acessado diretamente pelo APK. O servidor apenas interpreta e
-propõe; o aplicativo é a fonte de verdade e só altera a agenda depois do toque
+O aplicativo é sempre a fonte de verdade. O servidor interpreta a conversa e
+devolve apenas uma proposta validada; salvar, editar ou excluir depende do toque
 em **Confirmar**.
 
-## Rodar o projeto
+## 🧁 Stack do projeto
+
+| Camada | Tecnologia |
+| --- | --- |
+| aplicativo | Expo SDK 57, React Native 0.86 e Expo Router |
+| linguagem | TypeScript 6 e React 19 |
+| interface | Expo Linear Gradient, React Native SVG e Lucide Icons |
+| dados locais | AsyncStorage |
+| lembretes | Expo Notifications |
+| áudio | Expo Audio |
+| servidor privado | Node.js, Fastify e Zod |
+| assistente opcional | Hermes Agent local, protegido pelo backend |
+| qualidade | Vitest, TypeScript e Expo Doctor |
+
+## 🚀 Rodando localmente
+
+### Pré-requisitos
+
+- Node.js 22.13 ou superior;
+- npm;
+- Expo e um navegador, emulador ou aparelho Android;
+- Hermes apenas se você quiser testar o assistente inteligente.
+
+### Aplicativo
 
 ```bash
+git clone https://github.com/gustavomartins-dev/agenda-namorada.git
+cd agenda-namorada
 npm install
-npm run start
+npm run web
 ```
 
-Para usar o assistente, isole as ferramentas da plataforma API do Hermes e
-prepare o backend seguindo
-[server/README.md](./server/README.md). Em outro terminal:
+Para executar o projeto nativo Android com o SDK configurado:
+
+```bash
+npm run android
+```
+
+### Assistente local opcional
+
+O Hermes nunca deve ser chamado diretamente pelo aplicativo. Leia primeiro o
+[guia de segurança e configuração do servidor](./server/README.md).
 
 ```bash
 cd server
@@ -59,29 +147,91 @@ npm install
 npm run dev
 ```
 
-Para verificar a primeira entrega:
+No Xiaomi conectado por USB, encaminhe somente a porta do backend:
 
 ```bash
+adb reverse tcp:8787 tcp:8787
+```
+
+## 🧪 Qualidade
+
+```bash
+# aplicativo
 npm run typecheck
 npm test
 npm run doctor
 npm run export:android
+
+# servidor
+cd server
+npm run typecheck
+npm test
+npm run build
 ```
 
-No `server/` também execute `npm run typecheck`, `npm test` e `npm run build`.
+Estado verificado da v1:
 
-## Limitação atual do áudio
+- ✅ 15 testes do aplicativo;
+- ✅ 22 testes do servidor;
+- ✅ 21/21 verificações do Expo Doctor;
+- ✅ APK release standalone compilado e validado localmente;
+- ⏳ instalação e smoke test finais em um Xiaomi real;
+- ⏳ transcrição local, dependente de Whisper, FFmpeg e FFprobe;
+- ⏳ chave de assinatura Android definitiva.
 
-`expo-audio` e o upload temporário estão prontos. O computador inspecionado não
-tem Whisper, ffprobe nem ffmpeg instalados, então a transcrição inicia desabilitada e
-explica isso na interface. Veja o procedimento substituível no README do servidor.
+## 🗺️ Próximos desejos
 
-O assistente local chega ao Xiaomi por USB com `adb reverse`. Na web ele exige o
-backend no mesmo computador; em iPhone físico, nesta etapa, somente a agenda
-offline funciona. Nenhuma porta foi aberta na LAN e nenhum túnel foi criado.
+- [ ] validar toda a experiência em um Xiaomi com MIUI/HyperOS;
+- [ ] habilitar transcrição de áudio totalmente local;
+- [ ] criar assinatura permanente para atualizações do APK;
+- [ ] ampliar busca, filtros e eventos recorrentes;
+- [ ] adicionar mais opções de personalização sem perder acessibilidade.
 
-## Uso pessoal e marcas
+## 🧷 Escopo atual — sem glitter falso
 
-Este é um projeto pessoal e sem fins comerciais. Kuromi é uma personagem da
-Sanrio; este aplicativo não é oficial, licenciado, patrocinado ou afiliado à
-Sanrio.
+- a transcrição fica desabilitada por padrão até configurar Whisper, FFmpeg e
+  FFprobe localmente;
+- ainda não existem conta, nuvem, sincronização, backup ou compartilhamento;
+- busca, filtros e eventos recorrentes continuam no roadmap;
+- não há APK oficial publicado nem versão disponível na Play Store;
+- a primeira validação completa em um Xiaomi real ainda está pendente.
+
+## 🌙 Privacidade primeiro
+
+- compromissos e preferências permanecem no aparelho;
+- não há autenticação, telemetria ou banco remoto;
+- `.env`, chaves, sessões Hermes e APKs locais são ignorados pelo Git;
+- o backend aceita apenas loopback nesta etapa;
+- a porta privada do Hermes não é exposta ao celular nem à rede.
+
+## 🌟 Open source e contribuições
+
+O código original deste repositório está disponível sob a
+[licença MIT](./LICENSE). Ideias, issues e pull requests são bem-vindos — veja
+[como contribuir](./CONTRIBUTING.md).
+
+As artes, marcas e referências visuais da Kuromi/Sanrio **não fazem parte da
+licença MIT do código**. Consulte o [aviso sobre assets e marcas](./ASSET_NOTICE.md)
+antes de reutilizar qualquer imagem. Dependências e scaffolds de terceiros
+mantêm suas próprias licenças; veja [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NOTICES.md).
+
+## 🤖 Transparência sobre IA
+
+Este não é um projeto que apenas “recebeu uma ajudinha” de IA: a IA participou
+substancialmente da construção técnica. O OpenAI Codex apoiou arquitetura,
+implementação, UI, testes, documentação e Android, sempre sob direção e aprovação
+humanas. Os detalhes estão em [AI_DISCLOSURE.md](./AI_DISCLOSURE.md).
+
+## 🎀 Kuromi e Sanrio
+
+Este é um fan project pessoal, de finalidade não comercial e publicado para fins
+de aprendizado e colaboração. Kuromi e Sanrio pertencem aos seus respectivos
+titulares. O projeto não é oficial, licenciado, patrocinado, aprovado nem afiliado
+à Sanrio.
+
+<div align="center">
+  <p>⋆｡‧˚ʚ 💜 ɞ˚‧｡⋆</p>
+  <strong>Feito com carinho para a Nicolly.</strong>
+  <br />
+  <sub>organizar também pode ser fofo, roxo e um pouquinho rebelde 🖤</sub>
+</div>

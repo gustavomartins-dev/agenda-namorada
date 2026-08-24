@@ -9,7 +9,7 @@ Construa uma agenda realmente útil e personalizada, não apenas uma página dec
 
 ## Contexto
 
-- O produto é privado, pessoal, não comercial e será usado pela namorada de Gustavo Martins.
+- O produto é pessoal, não comercial e tem o código publicado como open source; a licença do código não cobre personagens, marcas ou artes de terceiros.
 - O tema escolhido é Kuromi, da Sanrio. Não substitua por uma personagem genérica quando o usuário pedir explicitamente Kuromi.
 - Não afirme afiliação, licença, patrocínio ou propriedade sobre Kuromi, Hello Kitty ou Sanrio.
 - Para imagens e elementos oficiais, prefira arquivos fornecidos pelo usuário ou fontes cujo uso pessoal esteja autorizado. Não faça hotlink de sites aleatórios.
