@@ -13,7 +13,7 @@
     <img src="https://img.shields.io/badge/Android-Xiaomi-FF4FA3?style=for-the-badge&logo=android&logoColor=white" alt="Android e Xiaomi" />
   </p>
   <p>
-    <img src="https://img.shields.io/badge/IA-OpenAI_Codex-23152F?style=flat-square&logo=openai&logoColor=white" alt="Desenvolvido com assistência do OpenAI Codex" />
+    <img src="https://img.shields.io/badge/IA-assistência_substancial-23152F?style=flat-square&logo=openai&logoColor=white" alt="Desenvolvido com assistência substancial de inteligência artificial" />
     <img src="https://img.shields.io/badge/licença-MIT-C77DFF?style=flat-square" alt="Licença MIT" />
     <img src="https://img.shields.io/badge/status-v1_preview-FF8BCB?style=flat-square" alt="Status v1 preview" />
   </p>
@@ -25,7 +25,8 @@
 > **Este projeto foi desenvolvido com assistência substancial de IA.** A ideia,
 > a dedicação e as decisões de produto são de Gustavo Martins; implementação,
 > interface, testes, documentação e preparação Android contaram principalmente
-> com o **OpenAI Codex**. Leia a [declaração completa de transparência](./AI_DISCLOSURE.md).
+> com o apoio de ferramentas de inteligência artificial. Leia a
+> [declaração completa de transparência](./AI_DISCLOSURE.md).
 
 ## 💜 Sobre este cantinho
 
@@ -218,9 +219,10 @@ mantêm suas próprias licenças; veja [THIRD_PARTY_NOTICES.md](./THIRD_PARTY_NO
 ## 🤖 Transparência sobre IA
 
 Este não é um projeto que apenas “recebeu uma ajudinha” de IA: a IA participou
-substancialmente da construção técnica. O OpenAI Codex apoiou arquitetura,
-implementação, UI, testes, documentação e Android, sempre sob direção e aprovação
-humanas. Os detalhes estão em [AI_DISCLOSURE.md](./AI_DISCLOSURE.md).
+substancialmente da construção técnica. Ferramentas de inteligência artificial
+apoiaram arquitetura, implementação, UI, testes, documentação e Android, sempre
+sob direção e aprovação humanas. Os detalhes estão em
+[AI_DISCLOSURE.md](./AI_DISCLOSURE.md).
 
 ## 🎀 Kuromi e Sanrio
 

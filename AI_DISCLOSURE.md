@@ -4,8 +4,8 @@ Este projeto foi idealizado e dirigido por **Gustavo Martins** como uma agenda
 pessoal para a Nicolly. O objetivo, a identidade afetiva, as escolhas de produto
 e a autorização das mudanças são decisões humanas.
 
-A construção do repositório contou com assistência substancial de IA generativa,
-principalmente do **OpenAI Codex**, nas seguintes áreas:
+A construção do repositório contou com assistência substancial de ferramentas
+de inteligência artificial generativa nas seguintes áreas:
 
 - planejamento da arquitetura e dos fluxos da agenda;
 - implementação e refatoração do código;
