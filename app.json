@@ -1,0 +1,78 @@
+{
+  "expo": {
+    "name": "Agenda da Nicolly",
+    "slug": "agenda-da-nicolly",
+    "scheme": "agenda-nicolly",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/app-icon-kuromi.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0E0914",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gustavomartins.agendanicolly"
+    },
+    "android": {
+      "package": "com.gustavomartins.agendanicolly",
+      "versionCode": 1,
+      "predictiveBackGestureEnabled": true,
+      "softwareKeyboardLayoutMode": "resize",
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW"
+      ],
+      "permissions": [
+        "android.permission.SCHEDULE_EXACT_ALARM"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/app-icon-kuromi.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0E0914",
+          "image": "./assets/app-icon-kuromi.png",
+          "imageWidth": 210,
+          "resizeMode": "contain",
+          "dark": {
+            "backgroundColor": "#0E0914",
+            "image": "./assets/app-icon-kuromi.png"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "color": "#B778FF",
+          "defaultChannel": "agenda-reminders"
+        }
+      ],
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "Permita que a Agenda da Nicolly use o microfone para gravar sua mensagem.",
+          "recordAudioAndroid": true,
+          "enableBackgroundRecording": false,
+          "enableBackgroundPlayback": false
+        }
+      ],
+      "expo-asset",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
