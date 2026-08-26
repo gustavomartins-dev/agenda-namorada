@@ -14,10 +14,10 @@ export type ChatMessage = {
 };
 
 export const WELCOME_MESSAGE: ChatMessage = {
-  id: 'welcome-kuromi-assistant',
+  id: 'welcome-kuromia-assistant',
   role: 'assistant',
   content:
-    'Oi, Nicolly! 💜 Me conta seu planinho do seu jeito. Eu organizo os detalhes e sempre te mostro tudo antes de salvar.',
+    'E aí, Nicolly! Eu sou a KuromI.A 😈💜 Manda seu plano que eu organizo tudo — mas você dá a palavra final, óbvio.',
   createdAt: 0,
   status: 'sent',
 };

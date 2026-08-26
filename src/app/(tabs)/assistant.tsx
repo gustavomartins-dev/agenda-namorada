@@ -29,6 +29,7 @@ import {
 } from 'react';
 import {
   Alert,
+  Image,
   KeyboardAvoidingView,
   Platform,
   Pressable,
@@ -497,9 +498,9 @@ export default function AssistantScreen() {
       >
         <View style={styles.headerWrap}>
           <PageHeader
-            eyebrow="Kuromi assistant"
-            subtitle="Você fala, ela organiza — só salva com seu ok"
-            title="Assistente mágica"
+            eyebrow="KuromI.A online"
+            subtitle="Atitude para organizar — e só salva com seu ok"
+            title="KuromI.A"
           />
           <View
             accessibilityLiveRegion="polite"
@@ -543,7 +544,7 @@ export default function AssistantScreen() {
               >
                 {assistant ? (
                   <View style={styles.avatar}>
-                    <Bot size={17} color={colors.softPink} />
+                    <Image source={require('../../../assets/app-icon-kuromi.png')} style={styles.avatarImage} />
                     <View style={styles.avatarDot} />
                   </View>
                 ) : null}
@@ -579,7 +580,7 @@ export default function AssistantScreen() {
           {sending ? (
             <View style={styles.messageRow}>
               <View style={styles.avatar}>
-                <Sparkles size={16} color={colors.softPink} />
+                <Image source={require('../../../assets/app-icon-kuromi.png')} style={styles.avatarImage} />
               </View>
               <View style={[styles.bubble, styles.assistantBubble, styles.typingBubble]}>
                 <Text style={styles.typing}>●  ●  ●</Text>
@@ -747,6 +748,11 @@ const styles = StyleSheet.create({
     height: 6,
     borderRadius: 3,
     backgroundColor: colors.hotPink,
+  },
+  avatarImage: {
+    width: 34,
+    height: 34,
+    borderRadius: 17,
   },
   bubble: { maxWidth: '86%', borderRadius: radii.lg, padding: spacing.md },
   assistantBubble: {
