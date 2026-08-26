@@ -19,6 +19,7 @@ export default function TabsLayout() {
       <Tabs.Screen name="index" options={{ title: 'Hoje' }} />
       <Tabs.Screen name="calendar" options={{ title: 'Calendário' }} />
       <Tabs.Screen name="assistant" options={{ title: 'Assistente' }} />
+      <Tabs.Screen name="recommendations" options={{ title: 'Ideias' }} />
       <Tabs.Screen name="corner" options={{ title: 'Cantinho' }} />
     </Tabs>
   );

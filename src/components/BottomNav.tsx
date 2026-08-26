@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { Tabs } from 'expo-router';
-import { Bot, CalendarDays, Heart, Home, type LucideIcon } from 'lucide-react-native';
+import { Bot, CalendarDays, Heart, Home, Lightbulb, type LucideIcon } from 'lucide-react-native';
 import { ComponentProps } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -25,6 +25,7 @@ type BottomNavProps = Parameters<TabBarRenderer>[0];
 const navMeta: Record<string, { label: string; icon: LucideIcon }> = {
   index: { label: 'Hoje', icon: Home },
   calendar: { label: 'Calendário', icon: CalendarDays },
+  recommendations: { label: 'Ideias', icon: Lightbulb },
   corner: { label: 'Cantinho', icon: Heart },
 };
 
@@ -81,6 +82,8 @@ export function BottomNav({ state, navigation }: BottomNavProps) {
   const corner =
     state.routes.find((route) => route.name === 'corner') ?? state.routes[0];
   const activeRoute = state.routes[state.index]?.name;
+  const recommendations =
+    state.routes.find((route) => route.name === 'recommendations') ?? state.routes[0];
 
   return (
     <View style={[styles.shell, { paddingBottom: Math.max(insets.bottom, 8) }]}>
@@ -119,6 +122,12 @@ export function BottomNav({ state, navigation }: BottomNavProps) {
           Assistente
         </Text>
       </View>
+
+      <NavItem
+        route={recommendations}
+        selected={activeRoute === recommendations.name}
+        navigation={navigation}
+      />
 
       <NavItem
         route={corner}
