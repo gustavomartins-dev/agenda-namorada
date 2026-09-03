@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/images/kuromi-planner.png" width="290" alt="Kuromi hugging a purple planner" />
+  <img src="./assets/project-crests/agenda-namorada-crest.png" width="240" alt="Nicolly's Agenda punk-kawaii crest with a purple planner and pink hearts" />
   <h1>🖤 Nicolly's Agenda 💜</h1>
   <p><strong>A loving, punk-kawaii, fully personalized planner.</strong></p>
   <p>Built to organize Nicolly's days with purple hearts, attitude, and a little magic.</p>
